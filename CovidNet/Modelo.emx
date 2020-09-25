@@ -339,6 +339,7 @@
       <details xmi:id="_XzwzkvRgEeqaFqG1ygyQmQ" key="com.ibm.xtools.activities.umlBBComment3" value="1"/>
       <details xmi:id="_Xzwzk_RgEeqaFqG1ygyQmQ" key="com.ibm.xtools.activities.umlBBInteractionOverview" value="1"/>
       <details xmi:id="_XzwzlPRgEeqaFqG1ygyQmQ" key="com.ibm.xtools.activities.umlBBDeploymentSpecification" value="1"/>
+      <details xmi:id="_cQv3QP9pEeqWmIwnYwmXdw" key="com.ibm.xtools.rest.ui.uireduction.activity" value="2"/>
     </eAnnotations>
     <packageImport xmi:id="_XzwzlfRgEeqaFqG1ygyQmQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -406,6 +407,123 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ITs8PRsEeqJN6dYeTZ-RQ" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EHgRQP9nEeqWmIwnYwmXdw" name="Prontuário" clientDependency="_ap31gP9oEeqWmIwnYwmXdw _fiitQP9rEeqWmIwnYwmXdw">
+      <ownedComment xmi:id="_rPVoYP9nEeqWmIwnYwmXdw" annotatedElement="_EHgRQP9nEeqWmIwnYwmXdw">
+        <body>&lt;p>Representa o prontuário dos pacientes, contendo todo o seu histórico&lt;/p></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_gHw3AP9nEeqWmIwnYwmXdw" name="Estado do paciente" visibility="private"/>
+      <ownedAttribute xmi:id="_gKDWAP9nEeqWmIwnYwmXdw" name="Altas" visibility="private"/>
+      <ownedAttribute xmi:id="_gMEIMP9nEeqWmIwnYwmXdw" name="Internações" visibility="private"/>
+      <ownedAttribute xmi:id="_TPqjMP9nEeqWmIwnYwmXdw" name="Atendimentos" visibility="private"/>
+      <ownedAttribute xmi:id="_UEUTQP9nEeqWmIwnYwmXdw" name="Procedimentos" visibility="private"/>
+      <ownedAttribute xmi:id="_U8eqUP9nEeqWmIwnYwmXdw" name="Exames" visibility="private"/>
+      <ownedOperation xmi:id="_FEAuEP9tEeqWmIwnYwmXdw" name="Solicitação de criação de prontuário "/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yNY_oP9nEeqWmIwnYwmXdw" name="Paciente">
+      <ownedAttribute xmi:id="_zX2AkP9nEeqWmIwnYwmXdw" name="Nome" visibility="private"/>
+      <ownedAttribute xmi:id="_zZQ84P9nEeqWmIwnYwmXdw" name="CPF" visibility="private"/>
+      <ownedAttribute xmi:id="_zaed0P9nEeqWmIwnYwmXdw" name="Idade" visibility="private"/>
+      <ownedAttribute xmi:id="_zb2W0P9nEeqWmIwnYwmXdw" name="Peso" visibility="private"/>
+      <ownedAttribute xmi:id="_zdLzkP9nEeqWmIwnYwmXdw" name="Altura" visibility="private"/>
+      <ownedAttribute xmi:id="_zevSwP9nEeqWmIwnYwmXdw" name="Tipo Snaguíneo" visibility="private"/>
+      <ownedAttribute xmi:id="_zf-o4P9nEeqWmIwnYwmXdw" name="Remédios de uso contínuo" visibility="private"/>
+      <ownedAttribute xmi:id="_zhRpYP9nEeqWmIwnYwmXdw" name="Doenças crônicas" visibility="private"/>
+      <ownedAttribute xmi:id="_zivpAP9nEeqWmIwnYwmXdw" name="Observações" visibility="private"/>
+      <ownedAttribute xmi:id="_zmI7QP9nEeqWmIwnYwmXdw" name="Convênio" visibility="private"/>
+      <ownedAttribute xmi:id="_Q7r8IP9sEeqWmIwnYwmXdw" name="interface Médico" visibility="private" type="_NeX9MP9rEeqWmIwnYwmXdw" association="_Q7rVEP9sEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q7u_cP9sEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q7sjMP9sEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_K8LNkP9oEeqWmIwnYwmXdw" name="Hospital">
+      <ownedComment xmi:id="_UquWgP9oEeqWmIwnYwmXdw" annotatedElement="_K8LNkP9oEeqWmIwnYwmXdw">
+        <body>&lt;p>Armazena informações sobre a lotação do hospital e sua localização&lt;/p></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_U5WBUP9oEeqWmIwnYwmXdw" name="Nome" visibility="private"/>
+      <ownedAttribute xmi:id="_U6ssMP9oEeqWmIwnYwmXdw" name="Endereço" visibility="private"/>
+      <ownedAttribute xmi:id="_U8HogP9oEeqWmIwnYwmXdw" name="Quantidade total de vagas" visibility="private"/>
+      <ownedAttribute xmi:id="_U9QQ8P9oEeqWmIwnYwmXdw" name="Quantidade de vagas ocupadas" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ap31gP9oEeqWmIwnYwmXdw" supplier="_yNY_oP9nEeqWmIwnYwmXdw" client="_EHgRQP9nEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cRrg0P9oEeqWmIwnYwmXdw" name="Centro de Vagas">
+      <ownedComment xmi:id="_iXUpYP9oEeqWmIwnYwmXdw" annotatedElement="_cRrg0P9oEeqWmIwnYwmXdw">
+        <body>&lt;p>Armazena informações das vagas do sistema&lt;/p></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_neCrkP9oEeqWmIwnYwmXdw" name="hospital" visibility="private" type="_K8LNkP9oEeqWmIwnYwmXdw" association="_neBdcP9oEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_neEgwP9oEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_neD5sP9oEeqWmIwnYwmXdw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G1vU8P9uEeqWmIwnYwmXdw" name="interface Centro" visibility="private" type="_RffCMP9rEeqWmIwnYwmXdw" association="_G1ut4P9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1wjEP9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1v8AP9uEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IKYMoP9uEeqWmIwnYwmXdw" name="interface Médico" visibility="private" type="_NeX9MP9rEeqWmIwnYwmXdw" association="_IKWXcP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKZawP9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IKYzsP9uEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_N_09EP9uEeqWmIwnYwmXdw" name="paciente" visibility="private" type="_yNY_oP9nEeqWmIwnYwmXdw" association="_N_0WAP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N_1kIP9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N_09Ef9uEeqWmIwnYwmXdw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_e0o-EP9uEeqWmIwnYwmXdw" name="fila de Espera" visibility="private" type="_-onUwP9oEeqWmIwnYwmXdw" association="_e0oXAP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e0qMMP9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e0plIP9uEeqWmIwnYwmXdw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_neBdcP9oEeqWmIwnYwmXdw" memberEnd="_neCrkP9oEeqWmIwnYwmXdw _neFH0P9oEeqWmIwnYwmXdw">
+      <ownedEnd xmi:id="_neFH0P9oEeqWmIwnYwmXdw" name="" visibility="private" type="_cRrg0P9oEeqWmIwnYwmXdw" association="_neBdcP9oEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_neFu4f9oEeqWmIwnYwmXdw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_neFu4P9oEeqWmIwnYwmXdw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tCd9cP9oEeqWmIwnYwmXdw" name="Relatório">
+      <ownedComment xmi:id="_vsy1sP9oEeqWmIwnYwmXdw" annotatedElement="_tCd9cP9oEeqWmIwnYwmXdw">
+        <body>&lt;p>Representa o relatório que será gerado para inspeção&lt;/p></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wPQCgP9oEeqWmIwnYwmXdw" name="Tipo do relatório" visibility="private"/>
+      <ownedAttribute xmi:id="_wQ6PYP9oEeqWmIwnYwmXdw" name="Duração da coleta de dados" visibility="private"/>
+      <ownedAttribute xmi:id="_wTMHUP9oEeqWmIwnYwmXdw" name="Dados" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-onUwP9oEeqWmIwnYwmXdw" name="Fila de Espera" clientDependency="_BgvYcP9pEeqWmIwnYwmXdw">
+      <ownedAttribute xmi:id="_C1-tEP9pEeqWmIwnYwmXdw" name="Regras de prioridade" visibility="private"/>
+      <ownedAttribute xmi:id="_C3TiwP9pEeqWmIwnYwmXdw" name="Posição" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_BgvYcP9pEeqWmIwnYwmXdw" supplier="_yNY_oP9nEeqWmIwnYwmXdw" client="_-onUwP9oEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NeX9MP9rEeqWmIwnYwmXdw" name="Interface Médico">
+      <ownedAttribute xmi:id="_NzDzwP9rEeqWmIwnYwmXdw" name="Mensagens para o Médico" visibility="private"/>
+      <ownedAttribute xmi:id="_Q7vmgP9sEeqWmIwnYwmXdw" name="paciente" visibility="private" type="_yNY_oP9nEeqWmIwnYwmXdw" association="_Q7rVEP9sEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q7wNkf9sEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q7wNkP9sEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IKao4P9uEeqWmIwnYwmXdw" name="centro de Vagas" visibility="private" type="_cRrg0P9oEeqWmIwnYwmXdw" association="_IKWXcP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKbP8f9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IKbP8P9uEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RffCMP9rEeqWmIwnYwmXdw" name="Interface Centro">
+      <ownedAttribute xmi:id="_SfcqYP9rEeqWmIwnYwmXdw" name="Mensagens para o Centro" visibility="private"/>
+      <ownedAttribute xmi:id="_G1xKIP9uEeqWmIwnYwmXdw" name="centro de Vagas" visibility="private" type="_cRrg0P9oEeqWmIwnYwmXdw" association="_G1ut4P9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1xxMf9uEeqWmIwnYwmXdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1xxMP9uEeqWmIwnYwmXdw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_fiitQP9rEeqWmIwnYwmXdw" supplier="_yNY_oP9nEeqWmIwnYwmXdw" client="_EHgRQP9nEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q7rVEP9sEeqWmIwnYwmXdw" memberEnd="_Q7r8IP9sEeqWmIwnYwmXdw _Q7vmgP9sEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bvbWEP9tEeqWmIwnYwmXdw" name="Interface Analista"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G1ut4P9uEeqWmIwnYwmXdw" memberEnd="_G1vU8P9uEeqWmIwnYwmXdw _G1xKIP9uEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IKWXcP9uEeqWmIwnYwmXdw" memberEnd="_IKYMoP9uEeqWmIwnYwmXdw _IKao4P9uEeqWmIwnYwmXdw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N_0WAP9uEeqWmIwnYwmXdw" memberEnd="_N_09EP9uEeqWmIwnYwmXdw _N_2LMP9uEeqWmIwnYwmXdw">
+      <ownedEnd xmi:id="_N_2LMP9uEeqWmIwnYwmXdw" name="" visibility="private" type="_cRrg0P9oEeqWmIwnYwmXdw" association="_N_0WAP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N_3ZUP9uEeqWmIwnYwmXdw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N_2yQP9uEeqWmIwnYwmXdw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_e0oXAP9uEeqWmIwnYwmXdw" memberEnd="_e0o-EP9uEeqWmIwnYwmXdw _e0raUP9uEeqWmIwnYwmXdw">
+      <ownedEnd xmi:id="_e0raUP9uEeqWmIwnYwmXdw" name="" visibility="private" type="_cRrg0P9oEeqWmIwnYwmXdw" association="_e0oXAP9uEeqWmIwnYwmXdw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e0tPgf9uEeqWmIwnYwmXdw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e0tPgP9uEeqWmIwnYwmXdw"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:id="_XzwznvRgEeqaFqG1ygyQmQ">
       <eAnnotations xmi:id="_Xzwzn_RgEeqaFqG1ygyQmQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -424,8 +542,18 @@
       </eAnnotations>
       <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
     </profileApplication>
+    <profileApplication xmi:id="_cLlDYP9pEeqWmIwnYwmXdw">
+      <eAnnotations xmi:id="_cLmRgP9pEeqWmIwnYwmXdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://RESTProfile/REST.epx#_w_1eEDeXEea7zJ8GtyuLLw?REST/REST?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://RESTProfile/REST.epx#_G6KGQAwqEd-fBO8fbtF2Cg?REST?"/>
+    </profileApplication>
   </uml:Model>
   <Default:Documentation xmi:id="_JFm0YPRuEeqJN6dYeTZ-RQ" base_Comment="_JFT5cPRuEeqJN6dYeTZ-RQ"/>
   <Default:Documentation xmi:id="_DRttsPRvEeqJN6dYeTZ-RQ" base_Comment="_DRqDUPRvEeqJN6dYeTZ-RQ"/>
   <Default:Documentation xmi:id="_HCCksPRvEeqJN6dYeTZ-RQ" base_Comment="_HCAIcPRvEeqJN6dYeTZ-RQ"/>
+  <Default:Documentation xmi:id="_rPYEoP9nEeqWmIwnYwmXdw" base_Comment="_rPVoYP9nEeqWmIwnYwmXdw"/>
+  <Default:Documentation xmi:id="_UqvkoP9oEeqWmIwnYwmXdw" base_Comment="_UquWgP9oEeqWmIwnYwmXdw"/>
+  <Default:Documentation xmi:id="_iXWekP9oEeqWmIwnYwmXdw" base_Comment="_iXUpYP9oEeqWmIwnYwmXdw"/>
+  <Default:Documentation xmi:id="_vs0D0P9oEeqWmIwnYwmXdw" base_Comment="_vsy1sP9oEeqWmIwnYwmXdw"/>
 </xmi:XMI>
