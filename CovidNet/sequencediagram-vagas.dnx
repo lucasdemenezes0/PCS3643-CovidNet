@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <!--Rational Software Architect Designer 9.7.0-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SketchNotation="http://www.ibm.com/ccl/soa/sketch/notation/1.0.0/" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation">
   <umlnotation:UMLDiagram xmi:id="_5vjZUAEDEeuivKf_AWCCMw" type="Sequence" element="_5vd5wgEDEeuivKf_AWCCMw" name="sequencediagram-rela.dnx" measurementUnit="Himetric">
     <children xmi:type="umlnotation:UMLShape" xmi:id="_5vjZUQEDEeuivKf_AWCCMw" element="_5vd5wgEDEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16250871" transparency="0" lineColor="12632258" lineWidth="1" showStereotype="Label">
       <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_5vjZUgEDEeuivKf_AWCCMw" type="interaction_compartment">
@@ -113,6 +113,34 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_C4k84wEQEeuivKf_AWCCMw" type="Name"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_C4k85AEQEeuivKf_AWCCMw" type="Parent"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C4kV0QEQEeuivKf_AWCCMw" x="301" y="132" width="3967" height="28151"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_38UOMAEQEeuivKf_AWCCMw" element="_QhgQsAEQEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_38UOMQEQEeuivKf_AWCCMw" x="-1" y="1453" height="1453"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_38UOMgEQEeuivKf_AWCCMw" element="_SKWd0gEQEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_38UOMwEQEeuivKf_AWCCMw" x="-1" y="1453" height="1453"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_38U1QAEQEeuivKf_AWCCMw" element="_UQtGUwEQEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_38U1QQEQEeuivKf_AWCCMw" x="-1" y="1453" height="1453"/>
+        </children>
+        <children xmi:id="_Xn_q4AETEeuivKf_AWCCMw" type="sktitle">
+          <children xmi:id="_XoCHIAETEeuivKf_AWCCMw" type="skshapes">
+            <styles xmi:type="notation:DrawerStyle" xmi:id="_XoCHIQETEeuivKf_AWCCMw"/>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_XoCHIgETEeuivKf_AWCCMw"/>
+            <styles xmi:type="notation:DrawerStyle" xmi:id="_XoCuMAETEeuivKf_AWCCMw"/>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_XoCuMQETEeuivKf_AWCCMw"/>
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_XoCuMgETEeuivKf_AWCCMw" type="skdescription">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Xn_q4QETEeuivKf_AWCCMw" fontHeight="18" description="Diagrama de Sequência - Gerenciar Vagas de UTI" transparency="0" lineWidth="3" roundedBendpointsRadius="12"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_Xn_q4gETEeuivKf_AWCCMw"/>
+          <styles xmi:type="SketchNotation:SketchStyle" xmi:id="_Xn_q4wETEeuivKf_AWCCMw"/>
+          <styles xmi:type="notation:RoundedCornersStyle" xmi:id="_Xn_q5AETEeuivKf_AWCCMw"/>
+          <styles xmi:type="notation:TextStyle" xmi:id="_Xn_q5QETEeuivKf_AWCCMw" textAlignment="Center"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xn_q5gETEeuivKf_AWCCMw" x="11862" y="-844"/>
         </children>
       </children>
       <children xmi:type="notation:BasicDecorationNode" xmi:id="_5vjZUwEDEeuivKf_AWCCMw" type="Name"/>
