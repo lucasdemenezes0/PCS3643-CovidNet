@@ -358,11 +358,7 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_xOaLMPRsEeqJN6dYeTZ-RQ" name="Gerenciar Vagas de UTI">
-      <eAnnotations xmi:id="_AZ-WcPRtEeqJN6dYeTZ-RQ" source="uml2.diagrams">
-        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_AZ-WcfRtEeqJN6dYeTZ-RQ" type="Usecase" name="UsecaseDiagram1">
-          <element xsi:nil="true"/>
-        </contents>
-      </eAnnotations>
+      <eAnnotations xmi:id="_AZ-WcPRtEeqJN6dYeTZ-RQ" source="uml2.diagrams"/>
       <ownedComment xmi:id="_HCAIcPRvEeqJN6dYeTZ-RQ" annotatedElement="_xOaLMPRsEeqJN6dYeTZ-RQ">
         <body>&lt;p>Nome: Gerenciar Vagas de UTI&lt;/p>&lt;p>Descrição: Verifica vagas disponíveis no sistema e gerencia a internação e a fila de espera dos pacientes&lt;/p>&lt;p>Evento iniciador: Pedido de internação de paciente&lt;/p>&lt;p>Ator(es): Médico do Hospital, Médico do Centro&lt;/p>&lt;p>Pré-condição: Não aplicávels&lt;/p>&lt;p>Sequência de Eventos&lt;/p>&lt;ol>&lt;li>&lt;p>Médico do Hospital faz pedido de internação no sistema&lt;/p>&lt;/li>&lt;li>&lt;p>Médico do Hospital submete dados do paciente (Como CPF, nome) &lt;/p>&lt;/li>&lt;li>&lt;p>Sistema verifica se há vaga disponível nos hospitais mais próximos do hospital de origem&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema verifica o hospital mais próximo com vaga disponível&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema envia pedido de internação no hospital de destino ao Médico do Centro&lt;/p>&lt;/li>&lt;li>&lt;p>Médico do Centro autoriza a internação e submete dados de ocupação de vaga ao sistema&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema envia dados da internação para o Médico do Hospital e para o hospital de destino&lt;/p>&lt;/li>&lt;li>&lt;p>Médico do Hospital atualiza prontuário do paciente&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema atualiza a base de vagas&lt;/p>&lt;/li>&lt;li>&lt;p>Fim do caso de uso&lt;/p>&lt;/li>&lt;/ol>&lt;p>Extensões&lt;/p>&lt;ol>&lt;li>&lt;p>Não há vagas disponíveis (Passo 3)&lt;/p>&lt;/li>&lt;ol>&lt;li>&lt;p>Sistema insere paciente na fila de espera de acordo com seus dados e da tabela 1&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema imprime mensagem  de “Não há vagas” com dados da fila, como posição e tempo de espera&lt;/p>&lt;/li>&lt;/ol>&lt;li>&lt;p>Médico do Centro não autoriza a vaga (Passo 6)&lt;/p>&lt;/li>&lt;ol>&lt;li>&lt;p>Médico do Centro envia relatório com motivos, escritos por ele mesmo como especialista, para a negação do pedido (e.g. equipamento necessário para tratar o paciente em manutenção, especialista de outro hospital melhor para o caso, etc.)&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema informa o médico do Hospital da não autorização e apresenta o relatório do Médico do Centro&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema encerra o caso de uso&lt;/p>&lt;/li>&lt;/ol>&lt;li>&lt;p>Paciente não cadastrado (Passo 2)&lt;/p>&lt;/li>&lt;ol>&lt;li>&lt;p>Sistema exibe opções para o médico digitar novamente os dados do paciente&lt;/p>&lt;/li>&lt;li>&lt;p>Sistema desvia para o passo 3&lt;/p>&lt;/li>&lt;/ol>&lt;/ol>&lt;p>Pós-condição: Paciente internado&lt;/p>&lt;p>Inclusões: Não aplicável&lt;/p></body>
       </ownedComment>
@@ -514,6 +510,10 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKbP8f9uEeqWmIwnYwmXdw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IKbP8P9uEeqWmIwnYwmXdw" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_3EoGQARHEeu0w78ZZPZyfA" name="controle" visibility="private" type="_revBMARHEeu0w78ZZPZyfA" association="_3EmREARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3EotUARHEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3EoGQQRHEeu0w78ZZPZyfA" value="1"/>
+      </ownedAttribute>
       <ownedOperation xmi:id="_a9ogEAEKEeuivKf_AWCCMw" name="Pedir internação"/>
       <ownedOperation xmi:id="_k6D3gAELEeuivKf_AWCCMw" name="Submeter dados do paciente"/>
       <ownedOperation xmi:id="_Dj-xsAENEeuivKf_AWCCMw" name="Enviar pedido de internação"/>
@@ -521,6 +521,8 @@
       <ownedOperation xmi:id="_CDLbYAEPEeuivKf_AWCCMw" name="Submeter dados da internação"/>
       <ownedOperation xmi:id="_t0gGIAEPEeuivKf_AWCCMw" name="Enviar informações de internação"/>
       <ownedOperation xmi:id="_RnjSwAEQEeuivKf_AWCCMw" name="Atualizar Prontuário"/>
+      <ownedOperation xmi:id="_Lpa1cARHEeu0w78ZZPZyfA" name="Criar Prontuário"/>
+      <ownedOperation xmi:id="_PxihYARHEeu0w78ZZPZyfA" name="Preencher formulário"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_RffCMP9rEeqWmIwnYwmXdw" name="Interface Centro">
       <ownedAttribute xmi:id="_SfcqYP9rEeqWmIwnYwmXdw" name="Mensagens para o Centro" visibility="private"/>
@@ -532,6 +534,10 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fiitQP9rEeqWmIwnYwmXdw" supplier="_yNY_oP9nEeqWmIwnYwmXdw" client="_EHgRQP9nEeqWmIwnYwmXdw"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Q7rVEP9sEeqWmIwnYwmXdw" memberEnd="_Q7r8IP9sEeqWmIwnYwmXdw _Q7vmgP9sEeqWmIwnYwmXdw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_bvbWEP9tEeqWmIwnYwmXdw" name="Interface Analista">
+      <ownedAttribute xmi:id="_B3WzkARJEeu0w78ZZPZyfA" name="controle" visibility="private" type="_revBMARHEeu0w78ZZPZyfA" association="_B3VlcARJEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B3WzkgRJEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B3WzkQRJEeu0w78ZZPZyfA" value="1"/>
+      </ownedAttribute>
       <ownedOperation xmi:id="_8wWbYAEEEeuivKf_AWCCMw" name="Gerenciar Relatórios"/>
       <ownedOperation xmi:id="_kbg3IAEHEeuivKf_AWCCMw" name="Solicitar geração de relatório"/>
       <ownedOperation xmi:id="_33HvsAEREeuivKf_AWCCMw" name="Selecionar opções desejadas"/>
@@ -550,6 +556,48 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e0tPgP9uEeqWmIwnYwmXdw"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_revBMARHEeu0w78ZZPZyfA" name="Controle">
+      <ownedAttribute xmi:id="_x0r2oARHEeu0w78ZZPZyfA" name="prontuário" visibility="private" type="_EHgRQP9nEeqWmIwnYwmXdw" association="_x0paYARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0tr0ARHEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0tEwARHEeu0w78ZZPZyfA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1H1pcARHEeu0w78ZZPZyfA" name="paciente" visibility="private" type="_yNY_oP9nEeqWmIwnYwmXdw" association="_1H1CYARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1H2QgQRHEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1H2QgARHEeu0w78ZZPZyfA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3Em4IARHEeu0w78ZZPZyfA" name="interface Médico" visibility="private" type="_NeX9MP9rEeqWmIwnYwmXdw" association="_3EmREARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3EnfMQRHEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3EnfMARHEeu0w78ZZPZyfA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_A-yM0ARJEeu0w78ZZPZyfA" name="relatório" visibility="private" type="_tCd9cP9oEeqWmIwnYwmXdw" association="_A-w-sARJEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A-yz4ARJEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A-yM0QRJEeu0w78ZZPZyfA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_B3XaoARJEeu0w78ZZPZyfA" name="interface Analista" visibility="private" type="_bvbWEP9tEeqWmIwnYwmXdw" association="_B3VlcARJEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B3YBsQRJEeu0w78ZZPZyfA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B3YBsARJEeu0w78ZZPZyfA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_x0paYARHEeu0w78ZZPZyfA" memberEnd="_x0r2oARHEeu0w78ZZPZyfA _x0uS4ARHEeu0w78ZZPZyfA">
+      <ownedEnd xmi:id="_x0uS4ARHEeu0w78ZZPZyfA" name="" visibility="private" type="_revBMARHEeu0w78ZZPZyfA" association="_x0paYARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0u58QRHEeu0w78ZZPZyfA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0u58ARHEeu0w78ZZPZyfA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1H1CYARHEeu0w78ZZPZyfA" memberEnd="_1H1pcARHEeu0w78ZZPZyfA _1H23kARHEeu0w78ZZPZyfA">
+      <ownedEnd xmi:id="_1H23kARHEeu0w78ZZPZyfA" name="" visibility="private" type="_revBMARHEeu0w78ZZPZyfA" association="_1H1CYARHEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1H3eoQRHEeu0w78ZZPZyfA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1H3eoARHEeu0w78ZZPZyfA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3EmREARHEeu0w78ZZPZyfA" memberEnd="_3Em4IARHEeu0w78ZZPZyfA _3EoGQARHEeu0w78ZZPZyfA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_A-w-sARJEeu0w78ZZPZyfA" memberEnd="_A-yM0ARJEeu0w78ZZPZyfA _A-za8ARJEeu0w78ZZPZyfA">
+      <ownedEnd xmi:id="_A-za8ARJEeu0w78ZZPZyfA" name="" visibility="private" type="_revBMARHEeu0w78ZZPZyfA" association="_A-w-sARJEeu0w78ZZPZyfA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A-za8gRJEeu0w78ZZPZyfA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A-za8QRJEeu0w78ZZPZyfA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_B3VlcARJEeu0w78ZZPZyfA" memberEnd="_B3WzkARJEeu0w78ZZPZyfA _B3XaoARJEeu0w78ZZPZyfA"/>
     <profileApplication xmi:id="_XzwznvRgEeqaFqG1ygyQmQ">
       <eAnnotations xmi:id="_Xzwzn_RgEeqaFqG1ygyQmQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
