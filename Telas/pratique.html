@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+
+  <title>Página de PEF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="homeScript.js"></script>
+  <style>
+
+  </style>
+</head>
+<body id="myPage" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="menu" class="container">
+    <div id="links">
+        <a class="dp btn dropBut" href="#">Home - Médico do Hospital</a>
+        <div class="dropagem">
+          <a id="resumosBut" class="dp btn dropBut">Retornar</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2>Prontuário</h2><br>
+      <div id="panel4" class="col-sm-4 meupanel">
+        <div id="tituloPanel4" class="panel-heading">Dados do paciente</div>
+        <div  class="panel-body">
+        <form>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="text" placeholder="Fulano" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Data</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="text" placeholder="dd/mm/aaaa" readonly>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Médico</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="text" placeholder="Dr. Planeta" readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Altura</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="text" placeholder="0.00m" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Peso</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="text" placeholder="00 Kg" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Idade</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="text" placeholder="00 anos" readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+   <div class="row">
+    <div class="col-sm-12 text-center">
+      <div id="panel4" class="col-sm-4 meupanel">
+        <div id="tituloPanel4" class="panel-heading">Consulta</div>
+        <div  class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descrição dos sintomas</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Observações do médico</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <div id="panel4" class="col-sm-4 meupanel">
+        <div id="tituloPanel4" class="panel-heading">Histórico</div>
+
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+
+  <div>
+    <footer id="direitos">
+      <strong>Todos os direitos Reservados Grupo de PEF</strong>
+    </footer>
+
+  </div>
+
+</body>
+</html>
