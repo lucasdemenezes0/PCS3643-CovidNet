@@ -731,7 +731,7 @@
                 <children xmi:type="notation:BasicDecorationNode" xmi:id="_Px8YggTgEeu1-5WEwJKM5w" type="Parent"/>
                 <children xmi:type="notation:ListCompartment" xmi:id="_Px8YgwTgEeu1-5WEwJKM5w" visible="false" type="Activities"/>
                 <children xmi:type="notation:ListCompartment" xmi:id="_Px8YhATgEeu1-5WEwJKM5w" visible="false" type="InternalTransitionCompartment"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Px7xcQTgEeu1-5WEwJKM5w" x="37620" y="8502"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Px7xcQTgEeu1-5WEwJKM5w" x="38445" y="8502"/>
               </children>
               <children xmi:type="umlnotation:UMLShape" xmi:id="_ho06gATgEeu1-5WEwJKM5w" element="_hozFUATgEeu1-5WEwJKM5w" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
                 <children xmi:type="notation:DecorationNode" xmi:id="_ho06ggTgEeu1-5WEwJKM5w" type="ImageCompartment">
@@ -787,6 +787,25 @@
                 <children xmi:type="notation:ListCompartment" xmi:id="_XszEUgTiEeu1-5WEwJKM5w" visible="false" type="Activities"/>
                 <children xmi:type="notation:ListCompartment" xmi:id="_XszEUwTiEeu1-5WEwJKM5w" visible="false" type="InternalTransitionCompartment"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XsydQQTiEeu1-5WEwJKM5w" x="31154" y="12306"/>
+              </children>
+              <children xmi:id="_36i9MATtEeu1-5WEwJKM5w" type="sktitle">
+                <children xmi:id="_36mnkATtEeu1-5WEwJKM5w" type="skshapes">
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_36mnkQTtEeu1-5WEwJKM5w"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_36mnkgTtEeu1-5WEwJKM5w"/>
+                  <styles xmi:type="notation:DrawerStyle" xmi:id="_36nOoATtEeu1-5WEwJKM5w"/>
+                  <styles xmi:type="notation:TitleStyle" xmi:id="_36nOoQTtEeu1-5WEwJKM5w"/>
+                  <element xsi:nil="true"/>
+                </children>
+                <children xmi:id="_36nOogTtEeu1-5WEwJKM5w" type="skdescription">
+                  <element xsi:nil="true"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_36i9MQTtEeu1-5WEwJKM5w" fontHeight="18" description="Todas as telas possuem um botão de retorno à tela anterior, e outro para a tela inicial correspondente" transparency="0" lineWidth="3" roundedBendpointsRadius="12"/>
+                <styles xmi:type="notation:LineTypeStyle" xmi:id="_36i9MgTtEeu1-5WEwJKM5w"/>
+                <styles xmi:type="SketchNotation:SketchStyle" xmi:id="_36i9MwTtEeu1-5WEwJKM5w"/>
+                <styles xmi:type="notation:RoundedCornersStyle" xmi:id="_36i9NATtEeu1-5WEwJKM5w"/>
+                <styles xmi:type="notation:TextStyle" xmi:id="_36i9NQTtEeu1-5WEwJKM5w" textAlignment="Center"/>
+                <element xsi:nil="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_36i9NgTtEeu1-5WEwJKM5w" x="29569" y="18963" width="10100" height="5846"/>
               </children>
             </children>
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_dZzuoQTbEeu1-5WEwJKM5w" type="Name"/>
@@ -1052,7 +1071,7 @@
         <subvertex xmi:type="uml:State" xmi:id="_SDMUUATeEeu1-5WEwJKM5w" name="Encontrar Paciente"/>
         <subvertex xmi:type="uml:State" xmi:id="_2z1KkATeEeu1-5WEwJKM5w" name="Cadastrar Paciente"/>
         <subvertex xmi:type="uml:State" xmi:id="_b6OOYATfEeu1-5WEwJKM5w" name="Notificação de Prontuário"/>
-        <subvertex xmi:type="uml:State" xmi:id="_FFSokATgEeu1-5WEwJKM5w" name="Tela de Geração de Relatório"/>
+        <subvertex xmi:type="uml:State" xmi:id="_FFSokATgEeu1-5WEwJKM5w" name="Tela de Seleção de Tipo e Duração de Relatório"/>
         <subvertex xmi:type="uml:State" xmi:id="_Px6jUATgEeu1-5WEwJKM5w" name="Tela de Emissão de Relatório"/>
         <subvertex xmi:type="uml:State" xmi:id="_hozFUATgEeu1-5WEwJKM5w" name="Tela de Pedido de Internação"/>
         <subvertex xmi:type="uml:State" xmi:id="_wMD6cATgEeu1-5WEwJKM5w" name="Tela de Pedido realizado com sucesso"/>
