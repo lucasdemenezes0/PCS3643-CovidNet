@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
 <!--Rational Software Architect Designer 9.7.0-->
-<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Plataforma de Modelagem Rational (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SketchNotation="http://www.ibm.com/ccl/soa/sketch/notation/1.0.0/" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation">
   <umlnotation:UMLDiagram xmi:id="_5vjZUAEDEeuivKf_AWCCMw" type="Sequence" element="_5vd5wgEDEeuivKf_AWCCMw" name="sequencediagram-rela.dnx" measurementUnit="Himetric">
     <children xmi:type="umlnotation:UMLShape" xmi:id="_5vjZUQEDEeuivKf_AWCCMw" element="_5vd5wgEDEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16250871" transparency="0" lineColor="12632258" lineWidth="1" showStereotype="Label">
@@ -76,7 +76,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_vqzn1AEMEeuivKf_AWCCMw" type="Stereotype"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_vqzn1QEMEeuivKf_AWCCMw" type="Name"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_vqzn1gEMEeuivKf_AWCCMw" type="Parent"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vqzn0QEMEeuivKf_AWCCMw" x="-4607" y="397" width="4894" height="17383"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vqzn0QEMEeuivKf_AWCCMw" x="185" y="265" width="6304" height="21971"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_MyDDwAENEeuivKf_AWCCMw" element="_MyAAcAENEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
           <eAnnotations xmi:id="_MyDDwgENEeuivKf_AWCCMw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -85,7 +85,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_MyDDxAENEeuivKf_AWCCMw" type="Stereotype"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_MyDDxQENEeuivKf_AWCCMw" type="Name"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_MyDDxgENEeuivKf_AWCCMw" type="Parent"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MyDDwQENEeuivKf_AWCCMw" x="185" y="132" width="5079" height="15821"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MyDDwQENEeuivKf_AWCCMw" x="185" y="133" width="6948" height="22077"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_tv2sIAEOEeuivKf_AWCCMw" element="_tvYyEwEOEeuivKf_AWCCMw" fontName="Segoe UI" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tv2sIQEOEeuivKf_AWCCMw" x="-1" y="1453" height="1453"/>
